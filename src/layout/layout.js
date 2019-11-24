@@ -97,28 +97,28 @@ function Layout(props) {
           selected={appConfig.page === 1}
           onClick={() => handleClick(1)}
           component={Link}
-          to={"/today"}
+          to={"/fitcalc/today"}
           ><ListItemIcon><LocalDiningIcon/></ListItemIcon><ListItemText primary="Dzisiejsze spożycie"/></ListItem>
           <ListItem
           button 
           selected={appConfig.page === 2}
           onClick={() => handleClick(2)}
           component={Link}
-          to={"/history"}
+          to={"/fitcalc/history"}
           ><ListItemIcon><TimelineIcon/></ListItemIcon><ListItemText primary="Historia"/></ListItem>
           <ListItem
           button 
           selected={appConfig.page === 3}
           onClick={() => handleClick(3)}
           component={Link}
-          to={"/products"}
+          to={"/fitcalc/products"}
           ><ListItemIcon><FastfoodIcon/></ListItemIcon><ListItemText primary="Produkty"/></ListItem>
           <ListItem
           button 
           selected={appConfig.page === 4}
           onClick={() => handleClick(4)}
           component={Link}
-          to={"/sync"}
+          to={"/fitcalc/sync"}
           ><ListItemIcon><SyncIcon/></ListItemIcon><ListItemText primary="Synchronizuj produkty"/></ListItem>
       </List>
       <Divider />

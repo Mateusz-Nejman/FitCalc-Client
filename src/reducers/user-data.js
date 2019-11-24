@@ -79,6 +79,7 @@ const userDataReducer = (
     return newState;
   } else if (action.type === "INIT") {
     localStorage.setItem("user_data", JSON.stringify(state));
+    return state;
   } else return state;
 };
 
