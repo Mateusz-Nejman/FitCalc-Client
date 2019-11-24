@@ -68,14 +68,17 @@ const userDataReducer = (
     const newState = {
       ...state,
       today: {
-        protein: state.protein + action.protein,
-        carbo: state.carbo + action.carbo,
-        fat: state.fat + action.fat
+        ...state.today,
+        protein: state.today.protein + action.protein,
+        carbo: state.today.carbo + action.carbo,
+        fat: state.today.fat + action.fat
       }
     };
-      localStorage.setItem("user_data", JSON.stringify(newState));
+    localStorage.setItem("user_data", JSON.stringify(newState));
 
     return newState;
+  } else if (action.type === "INIT") {
+    localStorage.setItem("user_data", JSON.stringify(state));
   } else return state;
 };
 

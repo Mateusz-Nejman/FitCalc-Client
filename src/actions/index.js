@@ -62,3 +62,7 @@ export const addToday = (protein, carbo, fat) => ({
   carbo: carbo,
   fat: fat
 });
+
+export const initUserData = () => ({
+  type: "INIT"
+})

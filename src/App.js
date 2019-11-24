@@ -14,7 +14,8 @@ import {
   addProgress,
   addHistory,
   setBmr,
-  setToday
+  setToday,
+  initUserData
 } from "./actions";
 import { getToday } from "./utlis/date-helper";
 
@@ -70,6 +71,8 @@ function App() {
         );
         dispatch(setToday(0, 0, 0, nowDate));
       }
+    } else {
+      dispatch(initUserData());
     }
     setLoad(true);
   }
