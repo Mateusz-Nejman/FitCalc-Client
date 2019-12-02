@@ -90,7 +90,7 @@ function Layout(props) {
           selected={appConfig.page === 0}
           onClick={() => handleClick(0)}
           component={Link}
-          to={"/"}
+          to={"/fitcalc/"}
           ><ListItemIcon><PersonIcon/></ListItemIcon><ListItemText primary="Profil"/></ListItem>
         <ListItem
           button 

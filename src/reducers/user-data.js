@@ -45,6 +45,8 @@ const userDataReducer = (
       history: [...state.history, [action.date, action.kcal]]
     };
 
+    console.log(newState);
+
     if (action.localSave)
       localStorage.setItem("user_data", JSON.stringify(newState));
 

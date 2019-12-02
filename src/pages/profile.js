@@ -64,7 +64,7 @@ export default function ProfilePage(props) {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography className={classes.expansionHeading}>Nowe BMR</Typography>
+          <Typography className={classes.expansionHeading}>Nowe Dane</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <NewBmr/>

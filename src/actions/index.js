@@ -41,7 +41,7 @@ export const addProductId = product => ({
 });
 
 export const addHistory = (date, kcal, localSave) => ({
-  type: "ADD_PROGRESS",
+  type: "ADD_HISTORY",
   date: date,
   kcal: kcal,
   localSave: localSave

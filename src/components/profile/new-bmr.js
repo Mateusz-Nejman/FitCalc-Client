@@ -83,7 +83,7 @@ export const NewBmr = () => {
     <Typography component="div" className={classes.root}>
       <FormControl className={classes.formControl}>
         <InputLabel shrink htmlFor="gender">
-          Age
+          Płeć
         </InputLabel>
         <NativeSelect
           value={gender}
