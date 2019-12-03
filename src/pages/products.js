@@ -42,7 +42,7 @@ const useStyles = makeStyles(theme => ({
 const options = {
   filter: true,
   filterType: null,
-  responsive: "scrollMaxHeight",
+  responsive: "scrollFullHeight",
   selectableRows: "none",
   download: false,
   print: false,
