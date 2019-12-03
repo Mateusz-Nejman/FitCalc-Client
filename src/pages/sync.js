@@ -2,11 +2,11 @@ import React from "react";
 import { Typography, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { useSelector, useDispatch } from "react-redux";
-import { addProduct } from "../actions";
+import { addProduct, addProducts } from "../actions";
 import Axios from "axios";
 
-//const url = "http://localhost:4000";
-const url = "https://fit-calc-server.herokuapp.com";
+const url = "http://localhost:4000";
+//const url = "https://fit-calc-server.herokuapp.com";
 
 const useStyles = makeStyles(theme => ({
   component: {
@@ -73,9 +73,13 @@ export default function SyncPage(props) {
         }
     }).then(response => {
         const newProducts = response.data.data;
+        //dispatch(addProducts(newProducts,true));
         newProducts.forEach(element => {
-            dispatch(addProduct(element.name,element.protein,element.carbo,element.fat,element.portion,element.hash,true));
+            dispatch(addProduct(element.name,element.protein,element.carbo,element.fat,element.portion,element.hash,false));
+
+            
         });
+        dispatch(addProducts());
         setDownload(2);
     });
   };

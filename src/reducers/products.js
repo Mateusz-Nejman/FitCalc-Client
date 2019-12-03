@@ -3,7 +3,7 @@ const productsReducer = (state = [], action) => {
     const newState = [
       ...state,
       [
-        action.name,
+        action.name.replace("&quot;","\"").replace("&quot;","\""),
         parseFloat(action.protein),
         parseFloat(action.carbo),
         parseFloat(action.fat),
@@ -17,6 +17,12 @@ const productsReducer = (state = [], action) => {
       localStorage.setItem("products", JSON.stringify(newState));
 
     return newState;
+  } else if(action.type == "ADD_PRODUCTS") {
+
+    localStorage.setItem("products", JSON.stringify(state));
+      
+
+    return state;
   } else if (action.type === "ADD_PRODUCT_ID") {
     const newState = [...state, action.product];
 

@@ -35,6 +35,10 @@ export const addProduct = (
   localSave: localSave
 });
 
+export const addProducts = () => ({
+  type: "ADD_PRODUCTS",
+});
+
 export const addProductId = product => ({
   type: "ADD_PRODUCT_ID",
   product: product
