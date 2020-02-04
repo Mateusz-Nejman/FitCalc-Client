@@ -79,19 +79,19 @@ function App() {
   return (
     <Layout>
       <Switch>
-        <Route path="/fitcalc/today">
+        <Route path="/today">
           <TodayPage />
         </Route>
-        <Route path="/fitcalc/history">
+        <Route path="/history">
           <HistoryPage />
         </Route>
-        <Route path="/fitcalc/products">
+        <Route path="/products">
           <ProductsPage />
         </Route>
-        <Route path="/fitcalc/sync">
+        <Route path="/sync">
           <SyncPage />
         </Route>
-        <Route path="/fitcalc/">
+        <Route path="/">
           <ProfilePage />
         </Route>
       </Switch>

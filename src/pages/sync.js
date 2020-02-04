@@ -5,8 +5,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { addProduct, addProducts } from "../actions";
 import Axios from "axios";
 
-const url = "http://localhost:4000";
-//const url = "https://fit-calc-server.herokuapp.com";
+//const url = "http://localhost:4000";
+const url = "https://fit-calc-server.herokuapp.com";
 
 const useStyles = makeStyles(theme => ({
   component: {

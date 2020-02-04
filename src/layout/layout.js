@@ -90,35 +90,35 @@ function Layout(props) {
           selected={appConfig.page === 0}
           onClick={() => handleClick(0)}
           component={Link}
-          to={"/fitcalc/"}
+          to={"/"}
           ><ListItemIcon><PersonIcon/></ListItemIcon><ListItemText primary="Profil"/></ListItem>
         <ListItem
           button 
           selected={appConfig.page === 1}
           onClick={() => handleClick(1)}
           component={Link}
-          to={"/fitcalc/today"}
+          to={"/today"}
           ><ListItemIcon><LocalDiningIcon/></ListItemIcon><ListItemText primary="Dzisiejsze spożycie"/></ListItem>
           <ListItem
           button 
           selected={appConfig.page === 2}
           onClick={() => handleClick(2)}
           component={Link}
-          to={"/fitcalc/history"}
+          to={"/history"}
           ><ListItemIcon><TimelineIcon/></ListItemIcon><ListItemText primary="Historia"/></ListItem>
           <ListItem
           button 
           selected={appConfig.page === 3}
           onClick={() => handleClick(3)}
           component={Link}
-          to={"/fitcalc/products"}
+          to={"/products"}
           ><ListItemIcon><FastfoodIcon/></ListItemIcon><ListItemText primary="Produkty"/></ListItem>
           <ListItem
           button 
           selected={appConfig.page === 4}
           onClick={() => handleClick(4)}
           component={Link}
-          to={"/fitcalc/sync"}
+          to={"/sync"}
           ><ListItemIcon><SyncIcon/></ListItemIcon><ListItemText primary="Synchronizuj produkty"/></ListItem>
       </List>
       <Divider />
